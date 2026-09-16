@@ -28,15 +28,12 @@ camButton.addEventListener("click", function(){
         camButton.textContent = buttonName;
         currentPic += 1;
         imageTag.src = pictures[currentPic-1].image;
-
         currentAudio = new Audio(pictures[currentPic-1].sound);
         currentAudio.play();
-
-        if (currentPic == 5){
-        alert("ERROR");      
-        }
+        
         if (currentPic == 6){
-        window.location.href = "about:blank";    
+                alert("ERROR");   
+                window.location.href = "about:blank";    
         }
 
         updateCam();
