@@ -3,7 +3,7 @@ let imageTag = document.getElementById('my-image');
 
 let buttonName = "Camera";
 camButton.textContent = buttonName;    
-let mySound = new Audio('path/to/sound.wav');
+let mySound = new Audio();
 mySound.play();
 
 let currentPic = 0;
